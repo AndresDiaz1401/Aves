@@ -1,14 +1,15 @@
 import streamlit as st
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 import numpy as np
 import cv2
 from tensorflow.keras.preprocessing import image
 import matplotlib.pyplot as plt
-from keras.applications.imagenet_utils import preprocess_input
+from tensorflow.keras.applications.imagenet_utils import preprocess_input
 import pandas as pd
 import os
 import urllib.parse
 import gdown
+
 # Lista de nombres de las especies
 especiesAves = [
     'Capuchino Carinegro', 'Capuchino Tricolor', 'Mirla Cafe', 'Mirla Ojiblanco',
